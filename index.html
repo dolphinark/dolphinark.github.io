@@ -10,6 +10,29 @@
     <title>Rita Hung Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/bc623bb4c8.js" crossorigin="anonymous"></script>
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+<script>
+function sendMail(){
+ let fields = {
+    name: document.querySelector("#name").value,
+    email: document.querySelector("#email").value,
+    message: document.querySelector("#message").value
+   };
+let body = '姓名：' + fields.name + '<br>'
+              + 'E-mail：' + fields.email + '<br>'
+               + 'Message：' + fields.message + '<br>';
+Email.send({
+    SecureToken : "a023e35c-b44b-4d9f-b186-666cd08d53ee",
+    To : 'ritahung22119@gmail.com',
+    From : "https://dolphinark.github.io./",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}
+</script>
 </head>
 
 <body>
@@ -164,28 +187,7 @@
     <!-- Contact End-->
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-function sendMail(){
- let fields = {
-    name: document.querySelector("#name").value,
-    email: document.querySelector("#email").value,
-    message: document.querySelector("#message").value
-   };
-let body = '姓名：' + fields.name + '<br>'
-              + 'E-mail：' + fields.email + '<br>'
-               + 'Message：' + fields.message + '<br>';
-Email.send({
-    SecureToken : "a023e35c-b44b-4d9f-b186-666cd08d53ee",
-    To : 'ritahung22119@gmail.com',
-    From : "https://dolphinark.github.io./",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-}
-</script>
+   
 </body>
 
 </html>
