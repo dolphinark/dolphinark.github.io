@@ -154,9 +154,9 @@
     <div class="contact_area">
         <div class="contact_form">
             <form class="contact" action="index.html" method="post">
-                <input type="text" class="textbox" placeholder="Name" required>
-                <input type="email" class="textbox" placeholder="Email" required>
-                <textarea name="message" placeholder="Message"></textarea required>
+                <input id="name" type="text" class="textbox" placeholder="Name" required>
+                <input id="email" type="email" class="textbox" placeholder="Email" required>
+                <textarea id="message" name="message" placeholder="Message"></textarea required>
             <input type="submit" class="send_btn" value="Send message!">
             </form>
         </div>
@@ -167,6 +167,11 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
 function sendMail(){
+ let fields = {
+    name: document.querySelector("#name").value,
+    email: document.querySelector("#email").value,
+    message: document.querySelector("#message").value
+   };
 Email.send({
     SecureToken : "258a4527-f3f7-4427-ae11-7fd8681b46c4",
     To : 'ritahung22119@gmail.com',
