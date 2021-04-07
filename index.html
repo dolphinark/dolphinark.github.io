@@ -164,6 +164,18 @@
     <!-- Contact End-->
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+Email.send({
+    SecureToken : "258a4527-f3f7-4427-ae11-7fd8681b46c4",
+    To : 'ritahung221@gmail.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+</script>
 </body>
 
 </html>
