@@ -172,6 +172,9 @@ function sendMail(){
     email: document.querySelector("#email").value,
     message: document.querySelector("#message").value
    };
+let body = '姓名：' + fields.name + '<br>'
+              + 'E-mail：' + fields.email + '<br>'
+               + 'Message：' + fields.message + '<br>';
 Email.send({
     SecureToken : "258a4527-f3f7-4427-ae11-7fd8681b46c4",
     To : 'ritahung22119@gmail.com',
