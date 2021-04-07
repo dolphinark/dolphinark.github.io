@@ -166,15 +166,17 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
+function sendMail(){
 Email.send({
     SecureToken : "258a4527-f3f7-4427-ae11-7fd8681b46c4",
     To : 'ritahung22119@gmail.com',
-    From : "https://dolphinark.github.io./",
+    From : "you@isp.com",
     Subject : "This is the subject",
     Body : "And this is the body"
 }).then(
   message => alert(message)
 );
+}
 </script>
 </body>
 
