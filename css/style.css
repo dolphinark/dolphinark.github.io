@@ -145,7 +145,7 @@ input[type=search]:focus {
     cursor: auto;
 }
 
-/* hamburger menu */
+
 @media only screen and (max-width:800px){
     .wrap {
         height: 100%;
@@ -156,6 +156,8 @@ input[type=search]:focus {
         width: 100%;
         padding: 0;
         justify-content: center;
+        background-color: rgba(0, 0, 0, .75);
+
     }
     .nav li{
         border-right: none;
@@ -273,6 +275,15 @@ svg .draw{
     height: 50%;
     margin: 0 auto;
     line-height: 2rem;
+    /* background-color: yellow; */
+}
+
+@media only screen and (max-width:800px){
+    .css-typing{
+    display: block;
+    width:150%;
+    margin-left: -20%;
+    }
 }
 
 .work {
