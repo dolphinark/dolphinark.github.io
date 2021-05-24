@@ -154,16 +154,39 @@
     <div class="contact_area">
         <div class="contact_form">
             <form class="contact" action="index.html" method="post">
-                <input type="text" class="textbox" placeholder="Name" required>
-                <input type="email" class="textbox" placeholder="Email" required>
-                <textarea name="message" placeholder="Message"></textarea required>
-            <input type="submit" class="send_btn" value="Send message!">
+                <input id="name" type="text" class="textbox" placeholder="Name" required>
+                <input id="email" type="email" class="textbox" placeholder="Email" required>
+                <textarea id="message" name="message" placeholder="Message"></textarea required>
+            <input type="submit" class="send_btn" value="Send message!" onclick="sendMail()">
             </form>
         </div>
     </div>
     <!-- Contact End-->
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+<script>
+function sendMail(){
+ let fields = {
+    name: document.querySelector("#name").value,
+    email: document.querySelector("#email").value,
+    message: document.querySelector("#message").value
+   };
+let body = '姓名：' + fields.name + '<br>'
+              + 'E-mail：' + fields.email + '<br>'
+               + 'Message：' + fields.message + '<br>';
+Email.send({
+    SecureToken : "736ee717-1153-43a4-90d1-b909ce512018",
+    To : 'ritahung22119@gmail.com',
+    From : "https://dolphinark.github.io./",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}
+</script>
 </body>
 
 </html>
