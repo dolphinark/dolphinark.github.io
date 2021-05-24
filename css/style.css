@@ -145,6 +145,27 @@ input[type=search]:focus {
     cursor: auto;
 }
 
+/* hamburger menu */
+@media only screen and (max-width:800px){
+    .wrap {
+        height: 100%;
+    }
+    .nav{
+        flex-direction: column;
+        border-right: none;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+    }
+    .nav li{
+        border-right: none;
+        border-bottom: 1px solid #847b71;
+        margin:10px;        
+    }
+}
+
+
+
 /* autocomplete */
 #autocomplete-results {
     position: absolute;
