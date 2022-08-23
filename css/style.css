@@ -53,7 +53,7 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-attachment: fixed;
-    background-image: url(https://picsum.photos/1650/1000);
+    /* background-image: url(https://picsum.photos/1650/1000); */
 }
 
 #top {

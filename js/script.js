@@ -1,4 +1,18 @@
 
+const imgCount = 3;
+const dir = 'images/';
+const randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
+const images = new Array
+         images[1] = "home0_bg.jpg",
+         images[2] = "home1_bg.jpg",
+         images[3] = "home2_bg.jpg",
+ document.getElementById('home_bg').style.backgroundImage = "url(" + dir + images[randomCount] + ")"; 
+
+// const imageUrl = 'https://picsum.photos/1650/1000' || '../images/home_bg.jpg'
+// // const imageUrl = '../images/home_bg.jpg'
+// document.getElementById('home_bg').style.backgroundImage=`url('${imageUrl}')`; 
+
+
 /*    Lightbox   */
 document.addEventListener('click', lightboxClick);
 
