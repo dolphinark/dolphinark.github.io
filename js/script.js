@@ -7,7 +7,8 @@ const images = new Array
          images[2] = "home1_bg.jpg",
          images[3] = "home2_bg.jpg",
  document.getElementById('home_bg').style.backgroundImage = "url(" + dir + images[randomCount] + ")"; 
-
+ document.getElementById('about-section').style.backgroundImage = "url(" + dir + images[randomCount] + ")"; 
+ 
 // const imageUrl = 'https://picsum.photos/1650/1000' || '../images/home_bg.jpg'
 // // const imageUrl = '../images/home_bg.jpg'
 // document.getElementById('home_bg').style.backgroundImage=`url('${imageUrl}')`; 
@@ -71,12 +72,12 @@ function topFunction() {
 
 
 
-/* Auto compete */
+/* Auto complete */
 
 
 let targetInput = document.getElementById('search-input');
 let results = document.getElementById('autocomplete-results');
-let countryList = ['募款箱 Donation Box','public art', 'pill case','白手杖擴香握把 Walking Stick', 'iphone X case','多功能可折疊雙人協力車 Tandem bike','飛機內飾設計 Airplane interior design','DIY爆米花機 Popcorn machine','下雨天的流星 Umbrella','料理刀 Knife','櫻花研磨罐 Salt Grinder'];
+let countryList = ['Modal','Change Color Theme', 'Meme Generator','Login Form', 'Toggle Favorite','Task Tracker','Dropdown','Meetups','Chat Bot','網頁視覺'];
 let matches = [];
 let resultsCursor = 0;
 
@@ -141,7 +142,7 @@ targetInput.addEventListener('keyup', function (event) {
     }
 });
 
-// Define a function for checking if the input value matches any of the country names
+// checking if the input value matches any of the country names
 function getMatches(inputText) {
     var matchList = [];
 
@@ -154,7 +155,7 @@ function getMatches(inputText) {
     return matchList;
 }
 
-// Define a function for displaying autocomplete results
+// displaying autocomplete results
 function displayMatches(matchList) {
     var j = 0;
 
@@ -170,7 +171,7 @@ function displayMatches(matchList) {
     toggleResults('show');
 }
 
-// Define a function for moving the cursor in the results list
+// moving the cursor in the results list
 function moveCursor(pos) {
     for (var x = 0; x < results.children.length; x++) {
         results.children[x].classList.remove('highlighted');
@@ -179,7 +180,7 @@ function moveCursor(pos) {
     results.children[pos].classList.add('highlighted');
 }
 
-// Define a function for toggling the results list
+// toggling the results list
 function toggleResults(action) {
     if (action == 'show') {
         results.classList.add('visible');
@@ -193,10 +194,36 @@ function toggleResults(action) {
 
 /* Typing Animation */
 
-new TypeIt("#typing_animation", {
-    // strings: "This is my string!",
-    speed: 75,
-    loop:false
-  }).go();
+// new TypeIt("#typing_animation", {
+//     // strings: "This is my string!",
+//     speed: 75,
+//     loop:false
+//   }).go();
 
 /* Typing Animation End*/
+
+new TypeIt(".multipleStrings", {
+    strings: ["Hi! 我是洪琬婷", "自學網頁設計正朝全端工程師方向努力中，",
+"希望能透過過去在設計領域相關的經驗，","結合喜歡解決問題的個性，","藉以創造良好的使用者經驗 !"],
+    speed: 50,
+    waitUntilVisible: true,
+  }).go();
+
+
+//send email
+function sendMail(e){
+    e.preventDefault();
+    console.log("hey")
+}
+
+function githubIconColor(color) {
+ document.getElementById('githubIcon').style.color = color;
+}   
+
+
+//roll in
+window.onscroll = function(){scrollRotate()};
+function scrollRotate() {
+  var tools = document.getElementById("tools");
+  tools.style.transform = "rotate(45deg)"
+}

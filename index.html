@@ -10,10 +10,15 @@
     <title>Rita Hung Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/bc623bb4c8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Noto+Serif+JP:wght@500&family=Rubik:wght@500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
+
     <!-- Nav -->
     <div class="wrap">
         <ul class="nav">
@@ -21,15 +26,14 @@
             <li><a href="#about-section"><i class="fas fa-user"></i>About</a></li>
             <li><a href="#work-section"><i class="fas fa-magic"></i>Work</a></li>
             <li><a href="#contact-section"><i class="fas fa-envelope"></i>Contact</a></li>
-            <li id="search" class="search-box">
+            <!-- <li id="search" class="search-box">
                 <label action="" for="autocomplete" class="search-btn">
                     <i class="fas fa-search"></i></label>
                 <input id="search-input" name="search-input" type="search" class="search-txt">
                 <ul id="autocomplete-results"></ul>
-            </li>
+            </li> -->
         </ul>
     </div>
-    </header>
 
     <button onclick="topFunction()" id="back-to-top">Top</button>
 
@@ -37,154 +41,190 @@
 
 
     <!-- Home -->
-    <div class="home"> 
+    <!-- <div class="container"> -->
+
+    <div class="home">
         <h1 id="home_bg">Hello</h1>
+    </div>
+    <div class="rockMask-container">
+        <div class="mask">
+            <div class="rock-bottom"></div>
+        </div>
     </div>
     <!-- Home End-->
 
+    <!-- About -->
+    <h1 class="about_h1">About me</h1>
+    <div class="about about_bg about_me" id="about-section">
+        <div class="about-blur">
 
-    <!-- work -->
-    <h1>work</h1>
-    <div class="work" id="work-section">
-        <div class="work1 container1">
-            <div class="contentbox1" data-lightbox="images/Modal.gif">Modal</div>
-            <div class="workpic1"></div>
+            <!-- <div class="line1"></div>
+        <div class="line2"></div> -->
+            <!-- <div class="line3"></div> -->
+            <!-- <div class="line4"></div> -->
+            <!-- <div class="line5"></div>
+        <div class="line6"></div>
+        <div class="line7"></div>
+        <div class="line8"></div> -->
+
+            <div class="multipleStrings">Hi! 我是洪琬婷，<br>自學網頁設計正朝全端工程師方向努力中，<br>
+                希望能活用在設計領域的經驗，<br>並結合喜歡解決問題的個性，<br>以創造良好的使用者體驗 !</div>
         </div>
-        <div class="work2 container2">
-            <div class="contentbox2" data-lightbox="images/Change-color-theme.gif">Change Color Theme</div>
-            <div class="workpic2"></div>
+        <!-- About End-->
+
+
+        <!-- work -->
+        <div class="square"></div>
+        <h1 id="work-section">work</h1>
+        <div id="work-container">
+            <div class="work1 container1">
+                <div class="contentbox1" data-lightbox="images/Modal.gif">Modal</div>
+                <div class="workpic1"></div>
+            </div>
+            <div class="work2 container2">
+                <div class="contentbox2" data-lightbox="images/Change-color-theme.gif">Change Color Theme</div>
+                <div class="workpic2"></div>
+            </div>
+            <div class="work3 container3">
+                <div class="contentbox3" data-lightbox="images/meme.gif">Meme Generator</div>
+                <div class="workpic3"></div>
+            </div>
+            <div class="work4 container4">
+                <div class="contentbox4" data-lightbox="images/Login-Form.gif">Login Form</div>
+                <div class="workpic4"></div>
+            </div>
+            <div class="work5 container5">
+                <div class="contentbox5" data-lightbox="images/favoriteGIF.gif">Toggle Favorite</div>
+                <div class="workpic5"></div>
+            </div>
+            <div class="work6 container6">
+                <div class="contentbox6" data-lightbox="images/TaskTracker.gif">Task Tracker</div>
+                <div class="workpic6"></div>
+            </div>
+            <div class="work7 container7">
+                <div class="contentbox7" data-lightbox="images/Dropdown.gif">Dropdown</div>
+                <div class="workpic7"></div>
+            </div>
+            <div class="work8 container8">
+                <div class="contentbox8" data-lightbox="images/meetup.gif">Meetups</div>
+                <div class="workpic8"></div>
+            </div>
+            <div class="work9 container9">
+                <div class="contentbox9" data-lightbox="images/ChatBot.gif">Chat Bot</div>
+                <div class="workpic9"></div>
+            </div>
+            <div class="work10 container10">
+                <div class="contentbox10" data-lightbox="images/webDesign.gif">網頁視覺</div>
+                <div class="workpic10"></div>
+            </div>
+            <div class="work11 container11">
+                <div class="contentbox11">...</div>
+                <div class="workpic11"></div>
+            </div>
+            <div class="work12 container12" onmouseover="githubIconColor('#2b2b2b')"
+                onmouseout="githubIconColor('#a6abab')">
+                <div class="contentbox12">
+                    <a href="https://github.com/dolphinark" target="_blank" rel="noreferrer noopenner">
+                        <i id="githubIcon" class="fa fa-brands fa-github github-btn">
+                            <span><br>GitHub</span></i>
+                    </a>
+                </div>
+                <div class="workpic12"></div>
+            </div>
         </div>
-        <div class="work3 container3">
-            <div class="contentbox3" data-lightbox="images/meme.gif">Meme Generator</div>
-            <div class="workpic3"></div>
-        </div>
-        <div class="work4 container4">
-            <div class="contentbox4" data-lightbox="images/Login-Form.gif">Login Form</div>
-            <div class="workpic4"></div>
-        </div>
-        <div class="work5 container5">
-            <div class="contentbox5" data-lightbox="images/favoriteGIF.gif">Toggle Favorite</div>
-            <div class="workpic5"></div>
-        </div>
-        <div class="work6 container6">
-            <div class="contentbox6" data-lightbox="images/TaskTracker.gif">Task Tracker</div>
-            <div class="workpic6"></div>
-        </div>
-        <div class="work7 container7">
-            <div class="contentbox7" data-lightbox="images/Dropdown.gif">Dropdown</div>
-            <div class="workpic7"></div>
-        </div>
-        <div class="work8 container8">
-            <div class="contentbox8" data-lightbox="images/meetup.gif">Meetups</div>
-            <div class="workpic8"></div>
-        </div>
-        <div class="work9 container9">
-            <div class="contentbox9" data-lightbox="images/ChatBot.gif">Chat Bot</div>
-            <div class="workpic9"></div>
-        </div>
-        <div class="work10 container10">
-            <div class="contentbox10" data-lightbox="images/webDesign.gif">網頁視覺</div>
-            <div class="workpic10"></div>
-        </div>
-        <!-- <div class="work11 container11">
-            <div class="contentbox11" data-lightbox="images/graphic_design.png"></div>
-            <div class="workpic11">Graphic design</div>
-        </div>
-        <div class="work12 container12">
-            <div class="contentbox12">...</div>
-            <div class="workpic12"></div>
-        </div> -->
     </div>
+
 
     <!-- lightbox-overlay -->
     <div id="lightbox-overlay">
         <img src="" alt="Lightbox image" title="Click anywhere to close" id="lightbox-image" />
     </div>
     <!-- lightbox-overlay End -->
-
     <!-- Work End-->
 
- <!-- About -->
- <div class="about" id="about-section">
-    <div class="about_me">
-        <h1>About me</h1>
-    </div>
-    <div class="about_bg">
-       
-        <svg class="draw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 396.5 78.33">
-            <path class="draw"
-                d="M.33,237.25c25.58-1.23,52.47-2,72.67-.34,36,2.93,48,6.92,86.5,14.63s91,12.77,153.5,6.92c41.6-3.9,58.69-10.46,82.67-13"
-                transform="translate(0.36 -183.17)" />
-            <path class="draw"
-                d="M-.33,220.67s71,4,88,5.33,84,12.67,96.67,14.33S258.73,248,285.5,245c31-3.5,105.42-20.5,110.08-20.83"
-                transform="translate(0.36 -183.17)" />
-            <path class="draw"
-                d="M.17,230S60,225.33,83,228.33s132.92,14,151.33,12c62.67-6.83,82.17-8,104.17-6.33s51.83,4.83,57.5,6.5"
-                transform="translate(0.36 -183.17)" />
-            <path class="draw"
-                d="M395.75,208.75c-16.36-1.63-183.29,23.19-216.51,23.37-36.5.2-41.26-1.42-70.43-12.27C77,204,15.67,190.16.25,195.75"
-                transform="translate(0.36 -183.17)" />
-            <path class="draw" d="M343.86,213.15" transform="translate(0.36 -183.17)" />
-            <path class="draw" d="M395.67,208.27" transform="translate(0.36 -183.17)" />
-            <path class="draw"
-                d="M395.67,215.85c-55-7.52-78.54.05-95-.19C241.33,222,149,229,105.18,219.85,88.67,216.67,69.1,215,52.5,213c-17.28-2.12-32.89-1.67-52.25.29"
-                transform="translate(0.36 -183.17)" />
-            <path class="draw"
-                d="M395.67,183.87c-15.28-.32-29.95-.31-41.17.36-35.5,2.13-78.5,11.44-132,21.55s-108.5,14.9-136.5,0-43.5-15.43-58.5-17.29c-9.54-1.18-17.82-.17-27.33.93"
-                transform="translate(0.36 -183.17)" />
-        </svg>
-   
-
-
-        <div class="css-typing" id="typing_animation">Hi !
-            我是洪琬婷&nbsp;&nbsp;<br>自學網頁設計，正朝全端工程師方向努力中，<br>
-            透過過去在設計領域相關的經驗，結合喜歡解決問題的個性，<br>
-            藉以創造良好的使用者經驗 !
-        </div>
-    </div>
-</div>
-<!-- About End-->
-
     <!-- Contact -->
-    <h1 id="contact-section">Contact me</h1>
     <div class="contact_area">
-        <div class="contact_form">
-            <form class="contact" action="index.html" method="post">
-                <input id="name" type="text" class="textbox" placeholder="Name" required>
-                <input id="email" type="email" class="textbox" placeholder="Email" required>
-                <textarea id="message" name="message" placeholder="Message"></textarea required>
-            <input type="submit" class="send_btn" value="Send message!" onclick="sendMail()">
-            </form>
-        </div>
+        <h1 id="contact-section">Contact me</h1>
+        <a href="mailto:ritahung19@gmail.com">ritahung19@gmail.com</a>
+        <!-- <div class="line"></div> -->
     </div>
+
+    <!-- <div class="contact_form">
+        <form class="contact" action="index.html" onsubmit="sendMail()">
+            <input id="name" type="text" name="name" class="textbox" placeholder="Name" required>
+            <input id="email" type="email" name="user-email" class="textbox" placeholder="Email" required>
+            <textarea id="message" name="message" placeholder="Message"></textarea required>
+            <input type="submit" class="send_btn" value="Send message!">
+            </form>
+        </div> -->
     <!-- Contact End-->
-</div>
+    <!-- </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    
-<script>
-function sendMail(){
- let fields = {
-    name: document.querySelector("#name").value,
-    email: document.querySelector("#email").value,
-    message: document.querySelector("#message").value
-   };
-let body = '姓名：' + fields.name + '<br>'
-              + 'E-mail：' + fields.email + '<br>'
-               + 'Message：' + fields.message + '<br>';
-Email.send({
-    SecureToken : "736ee717-1153-43a4-90d1-b909ce512018",
-    To : 'ritahung22119@gmail.com',
-    From : "https://dolphinark.github.io./",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-}
-</script>
+
+    <script>
+
+// function sendMail(){
+//     Email.send({
+//     Host : "smtp.gmail.com",
+//     Username : "ritahung19@gmail.com",
+//     Password : "qqgqkeurytgrcvuu",
+//     To : 'ritahung19@gmail.com',
+//     From : document.getElementById("email").value,
+//     Subject : "New message from portfolio",
+//     Body : "And this is the body"
+// }).then(
+//   message => alert(message)
+// );
+// }
+
+
+// function sendMail(){
+//  let fields = {
+//     name: document.querySelector("#name").value,
+//     email: document.querySelector("#email").value,
+//     message: document.querySelector("#message").value
+//    };
+// let body = '姓名：' + fields.name + '<br>'
+//               + 'E-mail：' + fields.email + '<br>'
+//                + 'Message：' + fields.message + '<br>';
+// Email.send({
+//     SecureToken : "736ee717-1153-43a4-90d1-b909ce512018",
+//     To : 'ritahung22119@gmail.com',
+//     From : "https://dolphinark.github.io./",
+//     Subject : "This is the subject",
+//     Body : "And this is the body"
+// }).then(
+//   message => alert(message)
+// );
+// }
+
+
+
+
+// function sendMail(e){
+//     // e.preventDefault();
+//     emailjs.send("ritaportfolio", "template_7nk3iwd", e.target, "Iau4ZMaj-IS1UjWbx").then(function(response) {
+//        console.log('SUCCESS!', response.status, response.text);
+//     }, function(error) {
+//        console.log('FAILED...', error);
+//     });
+
+// }
+    </script>
+
+    <!-- emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("Iau4ZMaj-IS1UjWbx");
+        })();
+
+
+    </script>
 
 </body>
 
