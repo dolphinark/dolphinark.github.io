@@ -7,23 +7,21 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Modak&family=Open+Sans&display=swap");
 /* @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Modak&family=Open+Sans&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Noto+Serif+JP:wght@500&family=Rubik:wght@500&display=swap');
 /* font-family: 'Aboreto', cursive; */
 /* font-family: 'Abril Fatface', cursive; */
 /* font-family: 'Noto Serif JP', serif; */
 
+
 body {
   font-family: "Open Sans", sans-serif;
-  /* background: #1d1d1d; */
-  /* background: url("../images/mesh-426.png"); */
   background-size: cover !important;
   background-repeat: no-repeat;
-  overflow-x: hidden;
 }
 
 html,
 body {
   scroll-behavior: smooth !important;
+  overflow-x: hidden;
 }
 
 * {
@@ -33,14 +31,12 @@ body {
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  /* font-family: inherit; */
   user-select: none;
 }
 
 .home {
   overflow: hidden;
   position: relative;
-  /* background: #1d1d1d; */
   height: 100vh;
   width: 100%;
   margin: 0;
@@ -109,7 +105,6 @@ body {
   top: -5vh;
   left: 0px;
   z-index: 40;
-  /* transform: rotate(180deg); */
 }
 
 #top {
@@ -497,13 +492,6 @@ svg .draw {
     "... work9 work10 work11 work12 ..." 30vh
     "... ... ... ... ... ..." 0vh
     / 15vh auto auto auto auto 15vh;
-
-  /* grid-template: "... ... ... ... ... ..." 0px 
-                 "... work1 work2 work3 work4 ..." 250px 
-                 "... work5 work6 work7 work8 ..." 250px 
-                 "... work9 work10 work11 work12 ..." 250px 
-                 "... ... ... ... ... ..." 60px 
-                 / 80px auto auto auto auto 80px; */
 }
 
 #work-container div {
@@ -741,13 +729,6 @@ svg .draw {
   justify-content: center;
 }
 
-/* .work .contentbox11 {
-  background: url("../images/graphic_design.png");
-  background-size: 95%;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
 /*     Flip Effect   */
 
 .container3,
@@ -942,17 +923,14 @@ svg .draw {
   padding: 100px;
 }
 
-.contact_area > a{
+.email{
   display: block;
   margin-top: 50px;
   text-align: center;
   color:whitesmoke;
   height: 100%;
   width: 100%;
-font-family: "Open Sans", sans-serif;
-font-family: 'Rubik', sans-serif;
-font-family: "Noto Serif JP", serif;
-font-family: 'Aboreto', cursive;
+  font-family: 'Aboreto', cursive;
 }
 
 .line {

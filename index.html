@@ -15,6 +15,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Aboreto&family=Noto+Serif+JP:wght@500&family=Rubik:wght@500&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -57,25 +60,18 @@
     <h1 class="about_h1">About me</h1>
     <div class="about about_bg about_me" id="about-section">
         <div class="about-blur">
-
-            <!-- <div class="line1"></div>
-        <div class="line2"></div> -->
-            <!-- <div class="line3"></div> -->
-            <!-- <div class="line4"></div> -->
-            <!-- <div class="line5"></div>
-        <div class="line6"></div>
-        <div class="line7"></div>
-        <div class="line8"></div> -->
-
-            <div class="multipleStrings">Hi! 我是洪琬婷，<br>自學網頁設計正朝全端工程師方向努力中，<br>
-                希望能活用在設計領域的經驗，<br>並結合喜歡解決問題的個性，<br>以創造良好的使用者體驗 !</div>
+            <div class="multipleStrings" data-aos="fade-up">Hi! 我是洪琬婷，
+                <br>自學網頁設計正朝全端工程師方向努力中，<br>
+                希望能活用在設計領域的經驗，<br>並結合喜歡解決問題的個性，
+                <br>以創造良好的使用者體驗 !
+            </div>
         </div>
         <!-- About End-->
 
 
         <!-- work -->
-        <div class="square"></div>
-        <h1 id="work-section">work</h1>
+        <div class="square" data-aos="fade-up"></div>
+        <h1 id="work-section" data-aos="fade-up">work</h1>
         <div id="work-container">
             <div class="work1 container1">
                 <div class="contentbox1" data-lightbox="images/Modal.gif">Modal</div>
@@ -144,9 +140,10 @@
 
     <!-- Contact -->
     <div class="contact_area">
-        <h1 id="contact-section">Contact me</h1>
-        <a href="mailto:ritahung19@gmail.com">ritahung19@gmail.com</a>
-        <!-- <div class="line"></div> -->
+        <div data-aos="fade-up">
+            <h1 id="contact-section">Contact me</h1>
+            <a href="mailto:ritahung19@gmail.com" class="email">ritahung19@gmail.com</a>
+        </div>
     </div>
 
     <!-- <div class="contact_form">
@@ -224,6 +221,9 @@
         })();
 
 
+    </script>
+    <script>
+        AOS.init();
     </script>
 
 </body>

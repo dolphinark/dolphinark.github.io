@@ -227,3 +227,6 @@ function scrollRotate() {
   var tools = document.getElementById("tools");
   tools.style.transform = "rotate(45deg)"
 }
+
+//INITIALIZE AOS
+AOS.init();
