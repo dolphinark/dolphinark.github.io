@@ -11,7 +11,6 @@
 /* font-family: 'Abril Fatface', cursive; */
 /* font-family: 'Noto Serif JP', serif; */
 
-
 body {
   font-family: "Open Sans", sans-serif;
   background-size: cover !important;
@@ -202,7 +201,6 @@ input[type="search"]:focus {
   cursor: auto;
 }
 
-
 /* autocomplete */
 #autocomplete-results {
   position: absolute;
@@ -337,7 +335,7 @@ svg .draw {
   }
 } */
 
-.square{
+.square {
   width: 25px;
   height: 25px;
   position: relative;
@@ -349,7 +347,7 @@ svg .draw {
 
 /* h1 */
 #work-section {
-  color:white;
+  color: white;
   position: relative;
   display: inline;
   left: 5vw;
@@ -547,61 +545,60 @@ svg .draw {
 
 .contentbox12 {
   font-size: 2rem;
- 
 }
 
-.work12{
+.work12 {
   position: relative;
   cursor: pointer;
   overflow: hidden;
 }
 
-.work12>a{
+.work12 > a {
   display: block;
 }
 
-#githubIcon{
-  color:#a6abab;
+#githubIcon {
+  color: #a6abab;
   display: block;
   height: 100%;
   width: 100%;
 }
 
-#githubIcon>span{
+#githubIcon > span {
   font-size: 1.5rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
-.work12>.github-btn{
+.work12 > .github-btn {
   position: relative;
   z-index: 1;
-  transition: all 0.5s ease;.
+  transition: all 0.5s ease;
 }
 
-.work12::before{
+.work12::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   background: skyblue;
   transition: all 0.5s ease;
 }
 
-.work12::before{
+.work12::before {
   left: -100%;
 }
 
-.github-btn:hover{
+.github-btn:hover {
   color: #2b2b2b;
-  color:#a6abab;
+  color: #a6abab;
   transition: all 0.5s ease;
 }
 
-.work12:hover::before{
+.work12:hover::before {
   left: 0;
-  color:#a6abab;
+  color: #a6abab;
   transition: all 0.5s ease;
 }
 
@@ -819,14 +816,14 @@ svg .draw {
   padding: 100px;
 }
 
-.email{
+.email {
   display: block;
   margin-top: 50px;
   text-align: center;
-  color:whitesmoke;
+  color: whitesmoke;
   height: 100%;
   width: 100%;
-  font-family: 'Aboreto', cursive;
+  font-family: "Aboreto", cursive;
 }
 
 .line {
@@ -892,7 +889,7 @@ svg .draw {
   color: #2b2b2b;
 } */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767.98px) {
   .wrap {
     height: 100%;
   }
@@ -910,7 +907,7 @@ svg .draw {
     margin: 10px;
   }
 
-  .about-container{
+  .about-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -919,77 +916,77 @@ svg .draw {
     position: relative;
   }
 
-  .about_h1 {  
-    top:10vh !important;
+  .about_h1 {
+    top: 10vh !important;
     position: absolute;
     transform: translate(-50%, -50%);
     /* margin: 0;
     padding: 0; */
-    left:50vw !important;
+    left: 50vw !important;
     font-size: 1.5rem;
     color: whitesmoke;
-    }
+  }
 
-    .about{
+  .about {
     height: 550vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
+  }
 
-    .about-blur {
+  .about-blur {
     top: -20vh !important;
     height: 100vh !important;
-    }
+  }
 
-    .multipleStrings{
-      width: 100vw;
-      font-size: 0.8rem;
-      line-height: 2rem !important;
-      /* font-weight: 300; */
-      top:35vh !important;
-      /* transform: translate(-50%,-50%); */
-      left: 0;
-      position: relative;
-      padding-block: 30px;
-    }
-    
-    .multipleStrings::after{
-      position: absolute;
-      content: "";
-      z-index:-1;
-      top:0px;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
-      margin-inline: 30px;
-      height: 150%;
-      backdrop-filter: blur(20px);
-      box-shadow: 0px 0px 80px 15px #f4f4f4 inset;
+  .multipleStrings {
+    width: 100vw;
+    font-size: 0.8rem;
+    line-height: 2rem !important;
+    /* font-weight: 300; */
+    top: 35vh !important;
+    /* transform: translate(-50%,-50%); */
+    left: 0;
+    position: relative;
+    padding-block: 30px;
+  }
 
-    }
+  .multipleStrings::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-inline: 30px;
+    height: 150%;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 80px 15px #f4f4f4 inset;
+  }
 
-    .square{
-      top:-90px;
-      /* margin-top: 10px; */
-      margin-bottom: 10px;
-      left: 0;
-    }
+  .square {
+    top: -90px;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    left: 0;
+  }
 
-    #work-section{
-      top:-80px;
-      left:0;
-      margin-bottom: -20px;
-    }
+  #work-section {
+    top: -80px;
+    left: 0;
+    margin-bottom: -20px;
+    font-size: 1.5rem;
+  }
 
-    #work-container{
-      position: relative;
-      top:0;
-      left:0;
-      right: 0;
-      bottom: 0;
-      grid-template:
+  #work-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    grid-template:
       "... ... ..." 0vh
       "... work1 ..." 20vh
       "... work2 ..." 30vh
@@ -1005,25 +1002,174 @@ svg .draw {
       "... work12 ..." 30vh
       "... ... ... " 0vh
       / auto 60vw auto !important;
-      gap:5vh;
-      background: none;
-      box-shadow: 0px 0px 50px 50px #313030 inset;
-      box-shadow: 0px 0px 60px 80px #313030 inset;
-    }
+    gap: 5vh;
+    background: none;
+    box-shadow: 0px 0px 50px 50px #313030 inset;
+    box-shadow: 0px 0px 60px 80px #313030 inset;
+  }
 
-    .contact_area{
-      top:0;
-      display: flex;
-      justify-content:center;
-      align-items: center;
-    }
+  .contact_area {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .email{
-      font-size: 0.8rem;
-    }
-  
-    }
+  .email {
+    font-size: 0.8rem;
+  }
 
+  #back-to-top:hover {
+    padding: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .wrap {
+    height: 100%;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    border-right: none;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .nav a {
+    text-align: center;
+  }
+
+  .nav li {
+    border-right: none;
+    border-bottom: 1px solid #847b71;
+    margin: 1rem;
+    font-size: 2rem;
+  }
+
+  .nav li > a i {
+    margin-block: 1.2rem;
+  }
+
+  .about-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .about_h1 {
+    top: 10vh !important;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    /* margin: 0;
+        padding: 0; */
+    left: 50vw !important;
+    font-size: 2rem;
+    color: whitesmoke;
+  }
+
+  .about {
+    height: 500vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-blur {
+    top: -15vh !important;
+    height: 50vh !important;
+  }
+
+  .multipleStrings {
+    width: 100vw;
+    font-size: 1rem;
+    line-height: 3rem !important;
+    /* font-weight: 300; */
+    top: 20vh !important;
+    /* transform: translate(-50%,-50%); */
+    left: 0;
+    position: relative;
+    padding-block: 30px;
+  }
+
+  .multipleStrings::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-inline: 150px;
+    height: 200%;
+    box-shadow: 0px 0px 150px 25px #f4f4f4 inset;
+  }
+
+  .square {
+    top: -90px;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    left: 0;
+  }
+
+  #work-section {
+    top: -80px;
+    left: 0;
+    margin-bottom: -20px;
+    font-size: 2rem;
+  }
+
+  #work-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    grid-template:
+      "... ... ..." 0vh
+      "... work1 ..." 20vh
+      "... work2 ..." 30vh
+      "... work3 ..." 30vh
+      "... work4 ..." 30vh
+      "... work5 ..." 30vh
+      "... work6 ..." 30vh
+      "... work7 ..." 30vh
+      "... work8 ..." 30vh
+      "... work9 ..." 30vh
+      "... work10 ..." 30vh
+      "... work11 ..." 30vh
+      "... work12 ..." 30vh
+      "... ... ... " 0vh
+      / auto 60vw auto !important;
+    gap: 5vh;
+    background: none;
+    box-shadow: 0px 0px 270px 170px #313030 inset;
+  }
+
+  .contact_area {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact-section {
+    font-size: 2rem;
+  }
+
+  .email {
+    font-size: 1rem;
+  }
+}
+/* 
 @media screen and (max-width: 950px) {
   .contact_area {
     flex-direction: column;
@@ -1035,5 +1181,4 @@ svg .draw {
   .contact_form .textbox:first-child {
     margin-bottom: 0px;
   }
-}
-
+} */
